@@ -3,6 +3,7 @@ defmodule Wallaby.Phantom.Driver.JSErrorsTest do
 
   import ExUnit.CaptureIO
 
+  @tag :err
   test "it captures javascript errors", %{session: session} do
     assert_raise Wallaby.JSError, fn ->
       session
